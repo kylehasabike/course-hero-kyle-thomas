@@ -1,0 +1,57 @@
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+</head>
+
+<body>
+
+	<style>
+		
+		input { font-size: 1.2rem; }
+		.output > * { display: inline-block; }
+		.output div { color: green; }
+		#feedback_message { 
+			color: red;
+			min-height:1rem;
+			font-size: 1rem;
+		}
+		#feedback_message.success {
+			color: green;
+			font-weight: bold;
+		}
+		.search-box, .output-box {
+			margin: 2rem 1rem 0; 
+			font-size: 1.2rem;
+		}
+	</style>
+
+	<div class="search-box">
+		Course Search:
+		<input id="user_input" type="text" placeholder="CS 111 Fall 2018">
+		<div id="feedback_message"></div>
+	</div>
+
+	<div class="output-box">
+		<div class="output">
+			Department: <div id="output_department"></div>
+		</div>
+		<div class="output">
+			Course Number: <div id="output_course"></div>
+		</div>
+		<div class="output">
+			Year:
+			<div id="output_year"></div>
+		</div>
+		<div class="output">
+			Semester: <div id="output_semester"></div>
+		</div>
+	</div>
+
+	<div id="output"></div>
+
+	<script src="src/index.js"></script>
+</body>
+
+</html>
